@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-let { USERS } = require('./users')
+const { USERS } = require('./users')
 const app = express();
 
 app.use(bodyParser.json());
@@ -37,7 +37,7 @@ app.delete('/users/:id', (req, res) => {
 	USERS = USERS.filter(user => {
 		return user.id !== Number(req.params.id);
 	});
-	res.send(200);
+	res.send(200)
 });
 
 app.listen(3000, () => {
