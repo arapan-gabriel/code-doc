@@ -6,37 +6,23 @@
 
 Provide a short code snippet (if applicable), or short usage instructions
 
-## Contributing
-
-Give instructions on how to participate in your project patches.
-
-## Help
-Explain which communication channels are available to request help. 
-(forum)
-
 ## Installation
+
+Specify how to install the application
 
 ### Requirements
 
 List anything your project requires in order to work as expected.
 
-### Installation
-
-
-
 ## Docs & Community
+Provide documentation links
 
 ## Contributing
 
-[Contributing Guide](Contributing.md)
+Specify the author, lead maintainer ...
 
-## People
-
-The original author of Express is [TJ Holowaychuk](https://github.com/tj)
-
-The current lead maintainer is [Douglas Christopher Wilson](https://github.com/dougwilson)
-
-[List of all contributors](https://github.com/expressjs/express/graphs/contributors)
+## Help
+Explain which communication channels are available to request help. 
 
 ## License
 
