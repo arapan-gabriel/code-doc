@@ -1,0 +1,41 @@
+{
+  "createUser": {
+    "required": [
+      "name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "age": {
+        "type": "number"
+      }
+    }
+  },
+  "updateUser": {
+    "required": [],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "age": {
+        "type": "number"
+      }
+    }
+  },
+  "Error": {
+    "required": [
+      "code",
+      "message"
+    ],
+    "properties": {
+      "code": {
+        "type": "integer",
+        "format": "int32"
+      },
+      "message": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -2,11 +2,18 @@ module.exports = {
 	USERS: [
 		{
 			id: 1,
-			name: "Alex"
+			name: "Alex",
+			age: 22
 		},
 		{
 			id: 2,
-			name: "Marin"
-		}
+			name: "Marin",
+			age: 25
+		},
+		{
+			id: 2,
+			name: "Dan",
+			age: 20
+		},
 	]
 };

@@ -1,0 +1,130 @@
+{
+  "api/users": {
+    "get": {
+      "parameters": [],
+      "tags": [
+        "Users"
+      ],
+      "summary": "users list",
+      "responses": {
+        "200": {
+          "description": "user response"
+        },
+        "default": {
+          "description": "unexpected error",
+          "schema": {
+            "$ref": "#/definitions/Error"
+          }
+        }
+      }
+    },
+    "post": {
+      "parameters": [
+        {
+          "name": "createUser",
+          "in": "body",
+          "schema": {
+            "$ref": "#/definitions/createUser"
+          }
+        }
+      ],
+      "tags": [
+        "Users"
+      ],
+      "summary": "create a user",
+      "responses": {
+        "200": {
+          "description": "user response",
+          "schema": {
+            "$ref": "#/definitions/createUser"
+          }
+        },
+        "default": {
+          "description": "unexpected error",
+          "schema": {
+            "$ref": "#/definitions/Error"
+          }
+        }
+      }
+    }
+  },
+  "api/users/{userId}": {
+    "get": {
+      "parameters": [
+        {
+          "name": "userId",
+          "in": "path"
+        }
+      ],
+      "tags": [
+        "Users"
+      ],
+      "summary": "get user by id",
+      "responses": {
+        "200": {
+          "description": "user response"
+        },
+        "default": {
+          "description": "unexpected error",
+          "schema": {
+            "$ref": "#/definitions/Error"
+          }
+        }
+      }
+    },
+    "put": {
+      "parameters": [
+        {
+          "name": "userId",
+          "in": "path",
+          "description": "user id"
+        },
+        {
+          "name": "updateUser",
+          "in": "body",
+          "schema": {
+            "$ref": "#/definitions/updateUser"
+          }
+        }
+      ],
+      "tags": [
+        "Users"
+      ],
+      "summary": "update a user",
+      "responses": {
+        "200": {
+          "description": "user response"
+        },
+        "default": {
+          "description": "unexpected error",
+          "schema": {
+            "$ref": "#/definitions/Error"
+          }
+        }
+      }
+    },
+    "delete": {
+      "parameters": [
+        {
+          "name": "userId",
+          "in": "path"
+        }
+      ],
+      "tags": [
+        "Users"
+      ],
+      "summary": "delete a user",
+      "responses": {
+        "200": {
+          "description": "user response"
+        },
+        "default": {
+          "description": "unexpected error",
+          "schema": {
+            "$ref": "#/definitions/Error"
+          }
+        }
+      }
+    }
+  }
+}
